@@ -1,0 +1,163 @@
+import java.util.Scanner;
+public class Uni3Exe01 {
+
+public static void main(String[] args) {
+    
+ Scanner teclado = new Scanner(System.in);
+
+ System.out.println("Digite a largura: ");
+ double largura = teclado.nextDouble();
+
+ System.out.println("Digite o comprimento: ");
+ double comprimento = teclado.nextInt();
+
+ double area = largura * comprimento;
+ 
+ System.out.println("Área do terreno " + area);
+ 
+ teclado.close();
+
+   }
+}
+
+import java.util.Scanner;
+public class Uni3Exe2 {
+
+//Uma loja de calçados está concedendo 12% de desconto nos produtos.
+// Escreva um programa para calcular e exibir o valor de desconto a ser dado num par de sapatos e quanto deve custar o produto com o desconto.
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite o valor do sapato: ");
+double valor = teclado.nextDouble();
+
+double porcentagem = 12;
+
+double resultado = ( valor* porcentagem) / 100;
+
+double preçoDesconto = valor - resultado;
+
+
+System.out.println("O valor do desconto é de R$ " + resultado);
+
+System.out.println("O preço do par de sapatos com desconto é R$ " + preçoDesconto);
+
+teclado.close();
+
+}
+
+}
+
+
+import java.util.Scanner;
+public class Uni3Exe3 {
+
+//Um motorista deseja abastecer seu tanque de combustível.
+//Escreva um programa para ler o preço do litro da gasolina e o valor do pagamento e exibir quantos litros ele conseguiu colocar no tanque.
+//PRECISA ARRUMAR
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite o preço do litro da gasolina: ");
+double gasolina = teclado.nextDouble();
+
+System.out.println("Digite o valor da pagamento: ");
+double pagamento = teclado.nextDouble();
+
+double litros = pagamento / gasolina;
+
+System.out.println("Esta foi a quantidade de litros colocada em seu tanque: " + String.format ("%.2f", litros));
+
+teclado.close();
+
+}
+
+}
+
+import java.util.Scanner;
+public class Uni3Exe04 {
+
+
+   // Faça um programa para ler três notas de um aluno em uma disciplina e imprimira sua média ponderada 
+   //(as notas tem pesos respectivos de 5, 3 e 2).
+public static void main(String[] args) {
+
+    Scanner teclado = new Scanner(System.in);
+
+ System.out.println("Digite sua nota: ");
+ double nota1 = teclado.nextDouble();
+
+ double nota01 = (nota1*0.5);
+
+ System.out.println("Digite sua nota: ");
+ double nota2 = teclado.nextDouble();
+
+ double nota02 = (nota2*0.3);
+
+ System.out.println("Digite sua nota: ");
+ double nota3 = teclado.nextDouble();
+
+ double nota03 = (nota3*0.2);
+
+double pesos = (0.3+0.2+0.5);
+
+double media = ((nota01+nota02+nota03)/pesos);
+
+ System.out.println("Sua média será de "+ media);
+
+    teclado.close();
+
+}
+}
+
+
+
+import java.util.Scanner;
+public class Uni3Exe05 {
+
+    public static void main(String[] args) {
+        
+Scanner teclado = new Scanner(System.in);
+
+double granja = teclado.nextDouble();
+
+double anel1 = 4.00;
+double anel2 = (3.50*2);
+double aneis = (anel1+anel2);
+
+double valor = (aneis*granja);
+
+System.out.println("O gasto total para marcar " +granja+" é "+valor);
+
+teclado.close();
+
+    }
+
+}
+
+
+
+import java.util.Scanner;
+public class Uni3Exe06 {
+
+//Um restaurante cobra R$ 25,00 por cada quilo de refeição. 
+//Escreva um programa que leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a pagar. O peso do prato é de 750 gramas.
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite o peso do seu prato (em quilos): ");
+double peso = teclado.nextDouble();
+
+double quilo = 25;
+double pesoPrato = 750;
+
+double 
+
+}
+
+}
