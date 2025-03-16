@@ -1,0 +1,43 @@
+
+
+
+import java.util.Scanner;
+public class Uni3Exe05 {
+        
+Scanner teclado = new Scanner(System.in);
+
+double granja = teclado.nextDouble();
+
+double anel1 = 4.00;
+double anel2 = (3.50*2);
+double aneis = (anel1+anel2);
+
+double valor = (aneis*granja);
+
+System.out.println("O gasto total para marcar " +granja+" é "+valor);
+
+teclado.close();
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
