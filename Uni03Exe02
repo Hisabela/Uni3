@@ -1,0 +1,31 @@
+public class Uni3Exe2 {
+
+//Uma loja de calçados está concedendo 12% de desconto nos produtos.
+// Escreva um programa para calcular e exibir o valor de desconto a ser dado num par de sapatos e quanto deve custar o produto com o desconto.
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite o valor do sapato: ");
+double valor = teclado.nextDouble();
+
+double porcentagem = 12;
+
+double resultado = ( valor* porcentagem) / 100;
+
+double preçoDesconto = valor - resultado;
+
+
+System.out.println("O valor do desconto é de R$ " + resultado);
+
+System.out.println("O preço do par de sapatos com desconto é R$ " + preçoDesconto);
+
+teclado.close();
+
+}
+
+}
+
+
+import java.util.Scanner;
