@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Uni3Exe13 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Altura: ");
+double altura = teclado.nextDouble();
+
+System.out.println("Comprimento: ");
+double comprimento = teclado.nextDouble();
+
+double valor = 12.50;
+
+double somaResultado = (((altura*comprimento)*9)*valor);
+
+System.out.println("O valor final é R$"+somaResultado);
+
+teclado.close();
+
+}
+
+}
