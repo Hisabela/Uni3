@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Uni3Exe12 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Nome: ");
+String nome = teclado.nextLine();
+
+System.out.println("Quantidade de horas trabalhadas no mês: ");
+int horasTrabalhadas = teclado.nextInt();
+
+System.out.println("Número de dependentes: ");
+int numDependentes = teclado.nextInt();
+
+double salario = 10*horasTrabalhadas;
+double dependentes = 60*numDependentes;
+
+double salarioBruto = salario+dependentes;
+
+double INSS = 8.5;
+double impostoRenda = 5.0;
+
+double porcentagemINSS = ((salario*INSS)/100);
+double porcentagemRenda = ((salario*impostoRenda)/100);
+
+double salarioLiquido = salario -(porcentagemINSS+porcentagemRenda); 
+
+System.out.println(nome+ " \nSalário bruto: "+ salarioBruto + " \nSalário Líquido: "+ salarioLiquido);
+
+
+teclado.close();
+}
+
+}
