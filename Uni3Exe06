@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Uni3Exe06 {
+public static void main(String[] args) {
+
+    //Um restaurante cobra R$ 25,00 por cada quilo de refeição. Escreva um programa que leia o peso do prato montado pelo cliente (em quilos)
+    // e imprima o valor a pagar. O peso do prato é de 750 gramas.
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite o peso do seu prato (em quilos): ");
+double quiloPrato = teclado.nextDouble();
+
+double quilo = 25.00;
+double pesoPrato = 0.75*quilo;
+
+double soma =  (quiloPrato*quilo)-pesoPrato;
+
+System.out.println("O valor do prato do cliente é R$"+soma);
+
+teclado.close();
+}
+
+}
