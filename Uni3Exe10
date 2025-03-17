@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Uni3Exe10 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner (System.in);
+
+System.out.println("Cateto oposto: ");
+double catetoOposto = teclado.nextDouble();
+
+System.out.println("Cateto adjacente: ");
+double catetoAdjacente = teclado.nextDouble();
+
+double catetoA2 = Math.pow(catetoAdjacente,2);
+
+double catetoO2 = Math.pow(catetoOposto,2);
+
+double hipotenusa = Math.sqrt(catetoA2+catetoO2);
+
+System.out.println("A hipotenusa é: " + hipotenusa );
+
+teclado.close();
+
+}
+
+}
