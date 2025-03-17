@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Uni3Exe14 {
+
+    public static void main(String[] args) {
+        
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Qual a distância percorrida(km)?: ");
+int distancia = teclado.nextInt();
+
+System.out.println("Qual o tempo gasto: ");
+int tempo = teclado.nextInt();
+
+int kmlitro = 12;
+
+int litros = distancia/kmlitro;
+
+int tempoGasto = distancia/tempo;
+
+System.out.println("A velocidade média foi de "+tempoGasto+" km/h e a quantidade de combustível usado foi "+litros+" litros.");
+
+
+teclado.close();
+    }
+
+}
